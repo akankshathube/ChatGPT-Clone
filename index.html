@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <button class="new-chat-btn" id="newChatBtn">
+            <i class="fas fa-plus"></i> New Chat
+          </button>
+          <button id="themeToggleBtn" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        <div class="predefined-prompts">
+          <h3>Quick Prompts</h3>
+          <button
+            class="prompt-btn"
+            data-prompt="Explain quantum computing in simple terms"
+          >
+            Quantum Computing
+          </button>
+          <button
+            class="prompt-btn"
+            data-prompt="Write a short story about a robot learning to paint"
+          >
+            Robot Artist
+          </button>
+          <button
+            class="prompt-btn"
+            data-prompt="Explain how neural networks work"
+          >
+            Neural Networks
+          </button>
+          <button
+            class="prompt-btn"
+            data-prompt="What are the best practices for web development?"
+          >
+            Web Dev Tips
+          </button>
+        </div>
+        <div class="chat-history">
+          <h3>Recent Chats</h3>
+          <div id="chatList"></div>
+        </div>
+        <div class="sidebar-footer">
+          <button id="clearHistoryBtn" class="danger-btn">
+            <i class="fas fa-trash"></i> Clear All Chats
+          </button>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="chat-container">
+          <div class="welcome-screen" id="welcomeScreen">
+            <h1>ChatGPT Clone</h1>
+            <p>Start a conversation with the AI assistant</p>
+          </div>
+          <div class="messages" id="messages">
+            <!-- Messages will be added here -->
+          </div>
+        </div>
+        <div class="input-container">
+          <form id="chatForm">
+            <textarea
+              id="userInput"
+              placeholder="Type your message here..."
+              rows="1"
+              autofocus
+            ></textarea>
+            <button type="submit" id="sendBtn" title="Send message">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="disclaimer">
+            ChatGPT Clone may produce inaccurate information about people,
+            places, or facts.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
