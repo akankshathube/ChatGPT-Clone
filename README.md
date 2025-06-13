@@ -64,6 +64,7 @@ const API_KEY = "YOUR_OPENAI_API_KEY_HERE";
 ---
 
 ## 🖼️ Screenshots
+![ChatGPT-Clone](https://github.com/user-attachments/assets/ab9dfe38-5f79-44ab-9c56-3fe08efd0e25)
 
 ## 🛠️ Tech Stack
 
